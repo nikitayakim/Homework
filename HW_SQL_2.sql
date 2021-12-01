@@ -1,4 +1,4 @@
--- Создать таблицу employees, Наполнить таблицу employee 70 строками.
+-- РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ employees, РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ employee 70 СЃС‚СЂРѕРєР°РјРё.
 create table employees(
 	id serial primary key,
 	employee_name varchar(50) not null
@@ -78,7 +78,7 @@ values ('Nicholas Nelson'),
 	('Sheila Marshall'),
 	('Olga Singleton');
 	
--- Создать таблицу salary Наполнить таблицу salary 15 строками
+-- РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ salary РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ salary 15 СЃС‚СЂРѕРєР°РјРё
 create table salary(
 	id serial primary key,
 	monthly_salary int not null
@@ -104,7 +104,7 @@ values (1000),
 	   (2400),
 	   (2500);
 
--- Создать таблицу employee_salary Наполнить таблицу employee_salary 40 строками:
+-- РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ employee_salary РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ employee_salary 40 СЃС‚СЂРѕРєР°РјРё:
 create table employee_salary(
 	id serial primary key,
 	employee_id int unique not null,
@@ -155,7 +155,7 @@ values (3, 7),
 	   (79, 2),
 	   (80, 15);
 	  
--- Создать таблицу roles Поменять тип столба role_name с int на varchar(30) Наполнить таблицу roles 20 строками:
+-- РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ roles РџРѕРјРµРЅСЏС‚СЊ С‚РёРї СЃС‚РѕР»Р±Р° role_name СЃ int РЅР° varchar(30) РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ roles 20 СЃС‚СЂРѕРєР°РјРё:
 create table roles(
 	id serial primary key,
 	role_name int unique not null
@@ -191,7 +191,7 @@ values ('Senior Python developer'),
 	('Middle Automation QA engineer'),
 	('Senior Automation QA engineer');
 
--- Создать таблицу roles_employee- id. Serial  primary key,- employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)- role_id. Int, not null (внешний ключ для таблицы roles, поле id)Наполнить таблицу roles_employee 40 строками:
+-- РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ roles_employee- id. Serial  primary key,- employee_id. Int, not null, unique (РІРЅРµС€РЅРёР№ РєР»СЋС‡ РґР»СЏ С‚Р°Р±Р»РёС†С‹ employees, РїРѕР»Рµ id)- role_id. Int, not null (РІРЅРµС€РЅРёР№ РєР»СЋС‡ РґР»СЏ С‚Р°Р±Р»РёС†С‹ roles, РїРѕР»Рµ id)РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ roles_employee 40 СЃС‚СЂРѕРєР°РјРё:
 
 create table roles_employee(
 	id serial primary key,
@@ -246,8 +246,4 @@ values (7, 20),
 	(24, 7),
 	(17, 6),
 	(37, 11);
-	   
-	   
-	   
-	   
 	   
